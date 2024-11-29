@@ -70,7 +70,7 @@ export PATH=$HOME/.config/rofi/scripts:$PATH
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+# HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -101,7 +101,7 @@ echo -e "|_____|___|_|___|___|_|_|_|___|  |___|_____|__,|_|_|${Color_Off}"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_UK.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -152,6 +152,9 @@ alias cpu="cpufreqctl turbo get"
 alias cpuoff="sudo cpufreqctl turbo set off && cpufreqctl turbo get "
 
 alias home="cd ~"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias docs="cd ~/documents"
 alias pics="cd ~/pictures"
 alias music="cd ~/music"
