@@ -160,6 +160,7 @@ alias pics="cd ~/pictures"
 alias music="cd ~/music"
 alias vids="cd ~/videos"
 alias downloads="cd ~/downloads"
+alias xx="exit"
 
 alias .rust="cd ~/documents/rust"
 alias .go="cd ~/documents/go"
@@ -168,6 +169,8 @@ alias .gleam="cd ~/documents/gleam"
 
 alias ..rust="cargo run --release"
 alias ..go="go run main.go"
+alias mk="make"
+alias super="chmod +wx"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /home/chiko/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
