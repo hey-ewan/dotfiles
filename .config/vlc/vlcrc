@@ -1560,7 +1560,7 @@ qt-minimal-view=1
 #qt-recentplay-filter=
 
 # Continue playback? (integer)
-#qt-continue=1
+qt-continue=2
 
 # Embed the file browser in open dialog (boolean)
 #qt-embedded-open=0
@@ -2411,6 +2411,20 @@ qt-auto-raise=3
 # CBR encoding (boolean)
 #sout-vorbis-cbr=0
 
+[twolame] # Libtwolame audio encoder
+
+# Encoding quality (float)
+#sout-twolame-quality=0.000000
+
+# Stereo mode (integer)
+#sout-twolame-mode=0
+
+# VBR mode (boolean)
+#sout-twolame-vbr=0
+
+# Psycho-acoustic model (integer)
+#sout-twolame-psy=3
+
 [ttml] # TTML subtitles decoder
 
 # Subtitle justification (integer)
@@ -3101,6 +3115,38 @@ qt-auto-raise=3
 #  SRT Stream ID (string)
 #streamid=
 
+[access_output_shout] # IceCAST output
+
+# Stream name (string)
+#sout-shout-name=VLC media player - Live stream
+
+# Stream description (string)
+#sout-shout-description=Live stream from VLC media player
+
+# Stream MP3 (boolean)
+#sout-shout-mp3=0
+
+# Genre description (string)
+#sout-shout-genre=Alternative
+
+# URL description (string)
+#sout-shout-url=http://www.videolan.org/vlc
+
+# Bitrate (string)
+#sout-shout-bitrate=
+
+# Samplerate (string)
+#sout-shout-samplerate=
+
+# Number of channels (string)
+#sout-shout-channels=
+
+# Ogg Vorbis Quality (string)
+#sout-shout-quality=
+
+# Stream public (boolean)
+#sout-shout-public=0
+
 [access_output_rist] # RIST stream output
 
 # RIST target packet size (bytes) (integer)
@@ -3416,6 +3462,11 @@ qt-auto-raise=3
 
 # Do not check for a valid rtcp message from the encoder (boolean)
 #mcast-blind-nacks=0
+
+[nfs] # NFS input
+
+# Set NFS uid/guid automatically (boolean)
+#nfs-auto-guid=1
 
 [linsys_sdi] # SDI Input
 
