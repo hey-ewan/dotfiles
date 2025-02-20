@@ -127,15 +127,15 @@ const togglesBox = Widget.Box({
     ToggleIconWifi(),
     ToggleIconBluetooth(),
     await ModuleCloudflareWarp(),
-    /* await ModuleRawInput(),
+    await ModuleRawInput(),
     await HyprToggleIcon(
-      "touchpad_mouse"kk
+      "touchpad_mouse",
       "No touchpad while typing",
       "input:touchpad:disable_while_typing",
       {},
-    ), */
+    ),
     await ModuleNightLight(),
-    await ModuleInvertColors(),
+    // await ModuleInvertColors(),
     ModuleIdleInhibitor(),
   ],
 });

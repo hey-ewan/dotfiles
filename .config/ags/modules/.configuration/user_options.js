@@ -39,7 +39,7 @@ let configOptions = {
     network: 'XDG_CURRENT_DESKTOP="gnome" gnome-control-center wifi',
     settings: 'XDG_CURRENT_DESKTOP="gnome" gnome-control-center',
     taskManager: "gnome-usage",
-    terminal: "foot", // This is only for shell actions
+    terminal: "ghostty", // This is only for shell actions
   },
   battery: {
     low: 20,
@@ -90,7 +90,7 @@ let configOptions = {
   overview: {
     scale: 0.18, // Relative to screen size
     numOfRows: 1,
-    numOfCols: 1,
+    numOfCols: 5,
     wsNumScale: 0.09,
     wsNumMarginScale: 0.07,
   },
@@ -131,7 +131,7 @@ let configOptions = {
       aiSearch: true,
       webSearch: true,
     },
-    engineBaseUrl: "https://www.duckduckgo.com/search?q=",
+    engineBaseUrl: "https://www.duckduckgo.com/search?t=",
     excludedSites: ["quora.com"],
   },
   time: {
@@ -145,16 +145,23 @@ let configOptions = {
     dateFormat: "%d/%m", // On notif time
   },
   weather: {
-    city: "Warri, Nigeria",
+    city: "Warri",
     preferredUnit: "C", // Either C or F
   },
   workspaces: {
     shown: 5,
   },
   dock: {
-    enabled: false,
+    enabled: true,
     hiddenThickness: 5,
-    pinnedApps: ["firefox", "org.gnome.Nautilus"],
+    pinnedApps: [
+      "zed-preview.app",
+      "zen-browser",
+      "org.gnome.Nautilus",
+      "telegram-desktop",
+      "discord",
+      "ghostty",
+    ],
     layer: "top",
     monitorExclusivity: true, // Dock will move to other monitor along with focus if enabled
     searchPinnedAppIcons: false, // Try to search for the correct icon if the app class isn't an icon name

@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "VSCode Icons (Dark)",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -14,35 +15,51 @@
     },
     "version": "2"
   },
+  "max_tabs": 6,
   "features": {
-    "inline_completion_provider": "supermaven"
+    "edit_prediction_provider": "zed"
   },
   "cursor_shape": "underline",
   "cursor_blink": true,
   "vim": {
     "toggle_relative_line_numbers": true,
-    "highlight_on_yank_duration": 2000
+    "highlight_on_yank_duration": 750,
+    "use_system_clipboard": "always",
+    "use_multiline_find": true
   },
   "ui_font_size": 16,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 14,
+  "buffer_font_family": "Zed Plex Mono",
+  "buffer_font_size": 14.0,
+  "slash_commands": {
+    "cargo_workspace": {
+      "enabled": false
+    }
+  },
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light",
+    "light": "Kanagawa Lotus",
     "dark": "Gruvbox Material"
   },
   "vim_mode": true,
+  "ui_font_features": {},
   "terminal": {
     "shell": {
       "program": "/usr/bin/fish"
     },
     "font_size": 14,
-    "font_family": "SpaceMono Nerd Font",
+    "font_family": "SpaceMono Nerd Font Propo",
     "cursor_shape": "underline",
-    "blinking": "on"
+    "blinking": "on",
+    "alternate_scroll": "on",
+    "dock": "bottom"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
+    "entry_spacing": "standard",
+    "indent_size": 16
+    // "scrollbar": {
+    // "show": "never"
+    // }
   },
   "telemetry": {
     "metrics": false,
@@ -82,7 +99,18 @@
     },
     "Rust": {
       "tab_size": 2,
+      "formatter": "auto"
+    },
+    "Markdown-Inline": {
+      "tab_size": 2,
       "formatter": "prettier"
+    }
+  },
+  "lsp": {
+    "wakatime": {
+      "settings": {
+        "api-key": ""
+      }
     }
   }
 }

@@ -1,12 +1,14 @@
 # fonts
-font-family = SpaceMono Nerd Font
+font-family = SpaceMono Nerd Font Propo
 font-size = 11
 
 # theme
 cursor-style = underline
 cursor-style-blink = true
 cursor-click-to-move = true
-background = #1D1A18
+cursor-invert-fg-bg = true
+adjust-underline-thickness = 1
+background = #282828
 
 # mouse
 mouse-hide-while-typing = true
@@ -16,7 +18,7 @@ window-padding-x = 16
 window-padding-y = 16,0
 window-padding-balance = true
 window-decoration = false
-# window-save-state = always
+window-save-state = always
 window-theme = ghostty
 gtk-single-instance = true
 gtk-tabs-location = bottom
@@ -34,4 +36,4 @@ keybind = ctrl+l=goto_split:right
 keybind = ctrl+m=toggle_split_zoom
 
 # other
-shell-integration-features = true
+shell-integration-features = no-cursor,sudo,title

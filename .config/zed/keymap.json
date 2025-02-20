@@ -10,8 +10,17 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "alt-t": "terminal_panel::ToggleFocus",
-      "alt-e": "project_panel::ToggleFocus"
+      "ctrl-t": "terminal_panel::ToggleFocus",
+      // "shift-ctrl-e": "project_panel::ToggleFocus",
+      "ctrl-e": "project_panel::ToggleFocus",
+      "alt-z": ["app_menu::OpenApplicationMenu", "Zed"],
+      "alt-f": ["app_menu::OpenApplicationMenu", "File"],
+      "alt-e": ["app_menu::OpenApplicationMenu", "Edit"],
+      "alt-s": ["app_menu::OpenApplicationMenu", "Selection"],
+      "alt-v": ["app_menu::OpenApplicationMenu", "View"],
+      "alt-g": ["app_menu::OpenApplicationMenu", "Go"],
+      "alt-w": ["app_menu::OpenApplicationMenu", "Window"],
+      "alt-h": ["app_menu::OpenApplicationMenu", "Help"]
     }
   },
   {
@@ -23,7 +32,7 @@
   {
     "context": "Terminal",
     "bindings": {
-      "alt-t": "workspace::ToggleBottomDock",
+      "ctrl-t": "workspace::ToggleBottomDock",
       "ctrl-n": "workspace::NewTerminal"
     }
   }
