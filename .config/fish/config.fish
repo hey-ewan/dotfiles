@@ -20,6 +20,7 @@ end
 set -gx ANDROID_HOME $HOME/Android/Sdk
 set -gx EDITOR zed
 set -gx BROWSER zen-browser
+set -gx TERM ghostty
 
 alias pamcan=pacman
 alias hz144="wlr-randr --output eDP-1 --custom-mode 1920x1080@144"
@@ -76,7 +77,6 @@ alias mk="make"
 alias super="chmod +wx"
 alias emulator="QT_QPA_PLATFORM=xcb ~/Android/Sdk/emulator/emulator"
 
-ff
 # function fish_prompt
 #   set_color cyan; echo (pwd)
 #   set_color green; echo '> '
@@ -98,3 +98,9 @@ fish_add_path -a /home/ewan/.foundry/bin
 export PATH="$PATH:/home/ewan/.sp1/bin"
 
 export PATH="$PATH:/opt/riscv/bin"
+
+#set_color cyan; echo -e "           _                                        "
+#set_color cyan; echo -e " _ _ _ ___| |___ ___ _____ ___    ___ _ _ _ ___ ___ "
+#set_color cyan; echo -e "| | | | -_| |  _| . |     | -_|  | -_| | | | .'|   |"
+#set_color cyan; echo -e "|_____|___|_|___|___|_|_|_|___|  |___|_____|__,|_|_|"
+#set_color cyan; echo -e "                                                    "
